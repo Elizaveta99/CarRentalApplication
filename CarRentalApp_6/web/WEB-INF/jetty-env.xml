@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure_9_0.dtd">
+<Configure >
+    <New id="CarRental" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jdbc/CarRental</Arg>
+        <Arg>
+            <New class="org.postgresql.ds.PGSimpleDataSource">
+                <Set name="Url">jdbc:postgresql://auutqjfwxskeue:bf95ce939db4f70990369c1613d93c3a6a3d5cdcfe471bdcfaf28c272dd48225@ec2-54-247-125-38.eu-west-1.compute.amazonaws.com:5432/ddatj98ktqn8tt?sslmode=require</Set>
+                <Set name="User">auutqjfwxskeue</Set>
+                <Set name="Password">bf95ce939db4f70990369c1613d93c3a6a3d5cdcfe471bdcfaf28c272dd48225</Set>
+                <Set name="DatabaseName">ddatj98ktqn8tt?sslmode=require </Set>
+                <Set name="ServerName">ec2-54-247-125-38.eu-west-1.compute.amazonaws.com</Set>
+                <Set name="PortNumber">5432</Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>
