@@ -5,7 +5,7 @@
         <Arg>jdbc/CarRental</Arg>
         <Arg>
             <New class="org.postgresql.ds.PGSimpleDataSource">
-                <Set name="Url">jdbc:postgresql://auutqjfwxskeue:bf95ce939db4f70990369c1613d93c3a6a3d5cdcfe471bdcfaf28c272dd48225@ec2-54-247-125-38.eu-west-1.compute.amazonaws.com:5432/ddatj98ktqn8tt?sslmode=require</Set>
+                <Set name="Url">jdbc:postgresql://ec2-54-247-125-38.eu-west-1.compute.amazonaws.com:5432/ddatj98ktqn8tt?sslmode=require</Set>
                 <Set name="User">auutqjfwxskeue</Set>
                 <Set name="Password">bf95ce939db4f70990369c1613d93c3a6a3d5cdcfe471bdcfaf28c272dd48225</Set>
                 <Set name="DatabaseName">ddatj98ktqn8tt?sslmode=require </Set>
