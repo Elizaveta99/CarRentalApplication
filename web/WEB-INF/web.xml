@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <resource-ref>
+    <!--<resource-ref>
         <description>My DataSource Reference</description>
         <res-ref-name>jdbc/CarRental</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
@@ -13,8 +13,8 @@
     <persistence-context-ref>
         <description>Persistence context for the application.</description>
         <persistence-context-ref-name>persistence/AppMgr</persistence-context-ref-name>
-        <persistence-unit-name>CarRental <!-- Defined in persistence.xml --></persistence-unit-name>
-    </persistence-context-ref>
+        <persistence-unit-name>CarRental </persistence-unit-name>
+    </persistence-context-ref>-->
 
     <display-name>Car Rental Application</display-name>
     <servlet>
