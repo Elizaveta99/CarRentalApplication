@@ -119,9 +119,9 @@ public class MainServlet extends HttpServlet {
     private void createNewCookies(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession(true);
         Cookie lastEnterTime = new Cookie("lastEnterTime", new Date().toString());
-        lastEnterTime.setComment("Время и дата последнего сеанса пользователя,");
+        lastEnterTime.setComment("Time and date of last usage,");
         Cookie usageCount = new Cookie("usageCount", "1");
-        usageCount.setComment("Количество посещений ресурса.");
+        usageCount.setComment("Amount of visits.");
 
         Cookie[] cookies = request.getCookies();
         if (cookies != null)
