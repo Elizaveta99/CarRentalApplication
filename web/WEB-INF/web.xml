@@ -12,7 +12,7 @@
     </resource-ref>
     <persistence-context-ref>
         <description>Persistence context for the application.</description>
-        <persistence-context-ref-name>persistence/AppMgr</persistence-context-ref-name>
+        <persistence-context-ref-name>persistence/CarRental</persistence-context-ref-name>
         <persistence-unit-name>CarRental <!-- Defined in persistence.xml --></persistence-unit-name>
     </persistence-context-ref>
 

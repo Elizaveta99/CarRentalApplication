@@ -8,7 +8,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>jdbc/CarRental</jta-data-source>
 
-<!--        <class>Model.Car</class>-->
+<!--        <class>Model.Car</class>--> 
 <!--        <class>Model.Client</class>-->
 <!--        <class>Model.Request</class>-->
 <!--        <class>Model.UserInfo</class>-->
