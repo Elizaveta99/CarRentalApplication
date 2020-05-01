@@ -1,1 +1,1 @@
-web:  java $JAVA_OPTS -cp target/classes:target/dependency/* --port $PORT target/CarRentalApp_6-1.0-SNAPSHOT
+web:  java $JAVA_OPTS -cp target/classes:target/dependency/* --port $PORT target/com.example.MainServlet
