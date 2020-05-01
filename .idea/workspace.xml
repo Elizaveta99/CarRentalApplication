@@ -27,7 +27,6 @@
     <list default="true" id="ae984b90-95e3-4b5d-a91a-736531bb0075" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CarRentalApp_6-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CarRentalApp_6-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <workItem from="1587721273752" duration="12102000" />
       <workItem from="1587910242735" duration="1391000" />
       <workItem from="1587917193106" duration="59939000" />
-      <workItem from="1588341670550" duration="1401000" />
+      <workItem from="1588341670550" duration="2147000" />
     </task>
     <servers />
   </component>
