@@ -71,7 +71,7 @@
     border-color: #000;
   }
 
-/* Наш стиль для невалидных полей */
+/* style for invalid fields */
 input:invalid{
     border-color: #900;
     background-color: #FDD;
@@ -81,7 +81,7 @@ input:invalid{
     outline: none;
   }
 
-  /* Это стиль для сообщений об ошибке */
+  /* style for error messaging */
   .error {
     width  : 100%;
     padding: 0;
