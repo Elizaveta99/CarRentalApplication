@@ -22,25 +22,7 @@
 после чего Клиенту выставляется Счет.
 По факту возврата Администратором фиксируется текущее состояние Автомобиля.</p>
 <p>
-    <%
-        String value = "";
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null)
-        {
-            for (Cookie cookie : cookies)
-            {
-                if (cookie.getName().equals("lastEnterTime"))
-                {
-                    try {
-                        value = URLDecoder.decode(cookie.getValue(), "UTF-8");
-                    }
-                    catch (UnsupportedEncodingException e) {}
-                }
-            }
-        }
-
-    %>
-    Last enter: ${value}
+    Last enter: ${cookie['lastEnterTime'].getValue()}
 <p>
 <p>
     Amount of enter's: ${cookie['usageCount'].getValue()}
