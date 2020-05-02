@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
-    <link rel="stylesheet" type="text/css" href="/style/styles.css">
+<%--    <link rel="stylesheet" type="text/css" href="/style/styles.css">--%>
 </head>
 <body>
     <div class="topnav">

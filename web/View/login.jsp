@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
-    <link rel="stylesheet" href="/style/styles.css">
+<%--    <link rel="stylesheet" href="/style/styles.css">--%>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
 <a href="${pageContext.request.contextPath}/serv?action=home">Back</a>
 
-<script src="/script/script.js" type="text/javascript" charset="utf-8"></script>
+<%--<script src="/script/script.js" type="text/javascript" charset="utf-8"></script>--%>
 </body>
 
 </html>
