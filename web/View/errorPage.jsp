@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <style>
+        <%@include file="/style/styles.css"%>
+    </style>
 </head>
 <body>
     

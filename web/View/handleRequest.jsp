@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <style>
+        <%@include file="/style/styles.css"%>
+    </style>
 </head>
 
 <body>
@@ -26,7 +28,9 @@
             <form id = "handle_request_form" action="${pageContext.request.contextPath}/serv?action=handleRequest" method="POST">
             </form>
         </div>
-        <script src="script/script.js"type="text/javascript" charset="utf-8"></script>
+        <script>
+            <%@include file="/script/script.js"%>
+        </script>
 </body>
 
 </html>
