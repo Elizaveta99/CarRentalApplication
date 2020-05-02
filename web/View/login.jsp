@@ -23,7 +23,7 @@
 <a href="${pageContext.request.contextPath}/serv?action=home">Back</a>
 
 <%--<script src="/script/script.js" type="text/javascript" charset="utf-8"></script>--%>
-<script>
+<script charset="utf-8">
     <%@include file="/script/script.js"%>
 </script>
 </body>
