@@ -90,7 +90,7 @@ public class MainServlet extends HttpServlet {
         String command = request.getParameter("action");
         if (command == null)
         {
-            //createNewCookies(request, response);
+            createNewCookies(request, response);
             getCommands.get("home").execute(request, response, this.getServletContext());
         }
         else if (getCommands.containsKey(command))

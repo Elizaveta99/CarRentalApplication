@@ -1,27 +1,27 @@
     const leaveRequestForm = {
         model: {
-            label: 'Модель',
+            label: 'Model',
             type: 'text',
             class: 'form-control',
-            placeholder: 'Введите модель',
+            placeholder: 'Enter model',
             name: 'model',
             id: 'model_input',
         },
         rental_time: {
-            label: 'Время аренды (в днях)',
+            label: 'Rental time (in days)',
             type: 'number',
             class: 'form-control',
-            placeholder: 'Введите время аренды',
+            placeholder: 'Enter rental time',
             name: 'rental_time',
             minValue: '1',
             step: '1',
             id: 'rental_time_input',
         },
         id_passport: {
-            label: 'ID клиента',
+            label: 'Client\'s ID',
             type: 'text',
             class: 'form-control',
-            placeholder: 'Введите ID клиента',
+            placeholder: 'Enter client\'s ID',
             name: 'id_passport',
             id: 'id_passport_input',
         },
@@ -34,10 +34,10 @@
 
     const carsByModelForm = {
         model: {
-            label: 'Модель',
+            label: 'Model',
             type: 'text',
             class: 'form-control',
-            placeholder: 'Введите модель',
+            placeholder: 'Enter model',
             name: 'model',
             id: 'model_input',
         },
@@ -50,18 +50,18 @@
 
     const handleRequestForm = {
         request_id: {
-            label: 'ID заявки',
+            label: 'Request\'s ID',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите ID заявки',
+            placeholder: 'Enter request\'s ID',
             name: 'request_id',
             id: 'request_id_input',
         },
         car_id: {
-            label: 'ID автомобиля',
+            label: 'Car\'s ID',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите ID автомобиля',
+            placeholder: 'Enter car\'s ID',
             name: 'car_id',
             id: 'car_id_input',
         },
@@ -74,10 +74,10 @@
 
     const returnCarForm = {
         car_id: {
-            label: 'ID автомобиля',
+            label: 'Car\'s ID',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите ID автомобиля',
+            placeholder: 'Enter car\'s ID',
             name: 'car_id',
             id: 'car_id_input',
         },
@@ -90,26 +90,26 @@
 
     const loginForm = {
         login_text: {
-            label: 'Логин',
+            label: 'Login',
             type: 'text',
             class: 'form-control',
-            placeholder: 'Введите логин',
+            placeholder: 'Enter login',
             name: 'login_text',
             id: 'login_text_input',
         },
         password_text: {
-            label: 'Пароль',
+            label: 'Password',
             type: 'text',
             class: 'form-control',
-            placeholder: 'Введите пароль',
+            placeholder: 'Enter password',
             name: 'password_text',
             id: 'password_text_input',
         },
         type_text: {
-            label: 'Тип(admin/user/guest)',
+            label: 'Type(admin/user/guest)',
             type: 'text',
             class: 'form-control',
-            placeholder: 'Введите тип',
+            placeholder: 'Enter type',
             name: 'type_text',
             id: 'type_text_input',
         },
@@ -122,34 +122,34 @@
 
     const registerForm = {
         login_text: {
-            label: 'Логин',
+            label: 'Login',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите логин',
+            placeholder: 'Enter login',
             name: 'login_text',
             id: 'login_text_input',
         },
         password_text: {
-            label: 'Пароль',
+            label: 'Password',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите пароль',
+            placeholder: 'Enter password',
             name: 'password_text',
             id: 'password_text_input',
         },
         name_text: {
-            label: 'Имя',
+            label: 'Name',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите имя',
+            placeholder: 'Enter name',
             name: 'name_text',
             id: 'name_text_input',
         },
         number_text: {
-            label: 'Номер телефона',
+            label: 'Phone\'s number',
             type: 'text',  //?? number
             class: 'form-control',
-            placeholder: 'Введите номер телефона',
+            placeholder: 'Enter phone\'s number',
             name: 'number_text',
             id: 'number_text_input',
         },
