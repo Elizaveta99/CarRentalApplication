@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
-    <link rel="stylesheet" type="text/css" href="${contextPath}/style/styles.css">
+    <%@include file="/style/styles.css"%>
+<%--    <link rel="stylesheet" type="text/css" href="/style/styles.css">--%>
 </head>
 <body>
     <div class="topnav">
