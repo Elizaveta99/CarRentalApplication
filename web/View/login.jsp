@@ -19,7 +19,7 @@
 
 <a href="${pageContext.request.contextPath}/serv?action=home">Back</a>
 
-<script src="script/script.js"></script>
+<script src="script/script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>

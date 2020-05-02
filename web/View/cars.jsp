@@ -45,7 +45,7 @@
                 </div>
             </c:if>
 
-            <script src="script/script.js"></script>
+            <script src="script/script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>

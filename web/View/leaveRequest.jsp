@@ -26,7 +26,7 @@
             <form id = "leave_request_form" action="${pageContext.request.contextPath}/serv?action=leaveRequest" method="POST">
             </form>
         </div>
-        <script src="script/script.js"></script>
+        <script src="script/script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
