@@ -28,10 +28,10 @@ public class RegisterFilter implements Filter {
         }
 
         if (action.equals("register")) {
-            String login = servletRequest.getParameter("login");
-            String password = servletRequest.getParameter("password");
-            String name = servletRequest.getParameter("name");
-            String number = servletRequest.getParameter("number");
+            String login = servletRequest.getParameter("login_text");
+            String password = servletRequest.getParameter("password_text");
+            String name = servletRequest.getParameter("name_text");
+            String number = servletRequest.getParameter("number_text");
 
             if (login == null || password == null || name == null || number == null) {
                 logger.info("register filter works " + login + " " + password + " " + name + " " + number);
