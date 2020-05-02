@@ -1,16 +1,25 @@
 package Controller.Filter;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class RegisterFilter implements Filter {
+
+    static final Logger logger = LogManager.getLogger("filter");
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {    }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
+        logger.info("register filter enter " );
+
         String action = servletRequest.getParameter("action");
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         if (action == null || !action.equals("register") || !httpServletRequest.getMethod().equalsIgnoreCase("POST")) {
@@ -18,16 +27,18 @@ public class RegisterFilter implements Filter {
             return;
         }
 
-        String login = servletRequest.getParameter("login");
-        String password = servletRequest.getParameter("password");
-        String name = servletRequest.getParameter("name");
-        String number = servletRequest.getParameter("number");
+        if (action.equals("register")) {
+            String login = servletRequest.getParameter("login");
+            String password = servletRequest.getParameter("password");
+            String name = servletRequest.getParameter("name");
+            String number = servletRequest.getParameter("number");
 
-        if (login == null || password == null || name == null || number == null)
-        {
-            servletRequest.setAttribute("errorMessage", "Some fields are empty");
-            ((HttpServletResponse) servletResponse).sendError(500);
-            return;
+            if (login == null || password == null || name == null || number == null) {
+                logger.info("register filter works " + login + " " + password + " " + name + " " + number);
+                servletRequest.setAttribute("errorMessage", "Some fields are empty");
+                ((HttpServletResponse) servletResponse).sendError(500);
+                return;
+            }
         }
         filterChain.doFilter(servletRequest, servletResponse);
     }
