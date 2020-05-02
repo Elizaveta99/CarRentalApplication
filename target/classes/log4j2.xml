@@ -18,6 +18,9 @@
         </File>
     </Appenders>
     <Loggers>
+        <Logger name="filter" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
         <Logger name="dao" level="info" additivity="false">
             <AppenderRef ref="DaoFile"/>
         </Logger>
