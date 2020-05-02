@@ -1,12 +1,13 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@include file="/style/styles.css"%>
-<%@include file="/script/script.js"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
+    <style>
+        <%@include file="/style/styles.css"%>
+    </style>
 <%--    <link rel="stylesheet" href="/style/styles.css">--%>
 </head>
 
@@ -22,6 +23,9 @@
 <a href="${pageContext.request.contextPath}/serv?action=home">Back</a>
 
 <%--<script src="/script/script.js" type="text/javascript" charset="utf-8"></script>--%>
+<script>
+    <%@include file="/script/script.js"%>
+</script>
 </body>
 
 </html>
