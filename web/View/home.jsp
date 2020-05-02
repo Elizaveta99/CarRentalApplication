@@ -1,5 +1,7 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.io.UnsupportedEncodingException"
+         import="java.net.URLDecoder"%>
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
@@ -20,10 +22,28 @@
 после чего Клиенту выставляется Счет.
 По факту возврата Администратором фиксируется текущее состояние Автомобиля.</p>
 <p>
-    Последний заход: ${URLDecoder.decode(cookie['lastEnterTime'].getValue(), "UTF-8")}
+    <%
+        String value = "";
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null)
+        {
+            for (Cookie cookie : cookies)
+            {
+                if (cookie.getName().equals("lastEnterTime"))
+                {
+                    try {
+                        value = URLDecoder.decode(cookie.getValue(), "UTF-8");
+                    }
+                    catch (UnsupportedEncodingException e) {}
+                }
+            }
+        }
+
+    %>
+    Last enter: ${value}
 <p>
 <p>
-    Количество посещений: ${cookie['usageCount'].getValue()}
+    Amount of enter's: ${cookie['usageCount'].getValue()}
 </p>
 </body>
 </html>

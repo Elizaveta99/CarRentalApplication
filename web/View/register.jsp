@@ -12,7 +12,7 @@
 
 <body>
 <h1>
-    Зарегистрироваться
+    Register
 </h1>
 <div class="page-form">
     <form id = "register_form" action="${pageContext.request.contextPath}/serv?action=register" method="POST">

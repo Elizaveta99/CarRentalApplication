@@ -22,7 +22,7 @@
                 <a class="login" href="${pageContext.request.contextPath}/serv?action=logout">Logout</a>
         </div>
         <h1>
-                Вернуть автомобиль
+                Return car
         </h1>
         <div class="page-form">
             <form id = "return_car_form" action="${pageContext.request.contextPath}/serv?action=returnCar" method="POST">

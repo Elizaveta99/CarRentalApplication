@@ -11,7 +11,7 @@
 </head>
 <body>
     
-<p style="font-family:courier;">Во время работы приложения возникла ошибка</p>
+<p style="font-family:courier;">An error occurred while running the application</p>
 
 </body>
 </html>

@@ -22,7 +22,7 @@
                 <a class="login" href="${pageContext.request.contextPath}/serv?action=logout">Logout</a>
         </div>
         <h1>
-            Оставить заявку
+            Leave request
         </h1>
         <div class="page-form">
             <form id = "leave_request_form" action="${pageContext.request.contextPath}/serv?action=leaveRequest" method="POST">

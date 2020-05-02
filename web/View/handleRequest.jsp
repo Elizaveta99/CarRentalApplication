@@ -22,7 +22,7 @@
                 <a class="login" href="${pageContext.request.contextPath}/serv?action=logout">Logout</a>
         </div>
         <h1>
-                Обработать заявку, назначив автомобиль
+                Handle request (set the car)
         </h1>
         <div class="page-form">
             <form id = "handle_request_form" action="${pageContext.request.contextPath}/serv?action=handleRequest" method="POST">

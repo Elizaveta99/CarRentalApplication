@@ -22,7 +22,7 @@
             <a class="login" href="${pageContext.request.contextPath}/serv?action=logout">Logout</a>
         </div>
             <h1>
-                    Список доступных автомобилей по модели
+                    List of available cars by model
             </h1>
 
         <div class="page-form">

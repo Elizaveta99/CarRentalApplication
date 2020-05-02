@@ -22,7 +22,7 @@
             <a class="login" href="${pageContext.request.contextPath}/serv?action=logout">Logout</a>
         </div>
             <h1>
-                    Список автомобилей
+                    List of cars
             </h1>
             <c:if test="${!empty carsList}">
             <div class="page-table">

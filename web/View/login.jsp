@@ -13,7 +13,7 @@
 
 <body>
 <h1>
-    Войти
+    Login
 </h1>
 <div class="page-form">
     <form id = "login_form" action="${pageContext.request.contextPath}/serv?action=login" method="POST">
