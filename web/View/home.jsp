@@ -1,10 +1,10 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@include file="/style/styles.css"%>
+<%--<%@include file="/style/styles.css"%>--%>
 <head>
     <meta charset="UTF-8">
     <title>CarRental</title>
-<%--    <link rel="stylesheet" type="text/css" href="/style/styles.css">--%>
+    <link rel="stylesheet" type="text/css" href="${contextPath}/web/style/styles.css">
 </head>
 <body>
     <div class="topnav">
