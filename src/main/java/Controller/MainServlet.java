@@ -16,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.Date;
 import java.util.HashMap;
@@ -120,7 +121,7 @@ public class MainServlet extends HttpServlet {
 
     private void createNewCookies(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
         HttpSession session = request.getSession(true);
-        Cookie lastEnterTime = new Cookie("lastEnterTime", URLEncoder.encode(new Date().toString(), "UTF-8"));
+        Cookie lastEnterTime = new Cookie("lastEnterTime", URLDecoder.decode(URLEncoder.encode(new Date().toString(), "UTF-8"), "UTF-8").toString());
         lastEnterTime.setComment("Time and date of last usage,");
         Cookie usageCount = new Cookie("usageCount", "1");
         usageCount.setComment("Amount of visits.");
