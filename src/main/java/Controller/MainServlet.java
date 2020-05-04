@@ -21,7 +21,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-//@WebServlet(urlPatterns = "/serv")
 public class MainServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private Map<String, Command> getCommands, postCommands;
@@ -120,7 +119,8 @@ public class MainServlet extends HttpServlet {
 
     private void createNewCookies(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
         HttpSession session = request.getSession(true);
-        Cookie lastEnterTime = new Cookie("lastEnterTime", URLEncoder.encode(new Date().toString(), "UTF-8"));
+        Cookie lastEnterTime = new Cookie("lastEnterTime", new Date().toString());
+        //Cookie lastEnterTime = new Cookie("lastEnterTime", URLEncoder.encode(new Date().toString(), "UTF-8"));
         lastEnterTime.setComment("Time and date of last usage,");
         Cookie usageCount = new Cookie("usageCount", "1");
         usageCount.setComment("Amount of visits.");

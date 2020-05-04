@@ -41,7 +41,6 @@ public class LeaveRequestCommand implements Command {
             try {
                 client = clientDAO.getClientById(id_passport);
             } catch (DAOException e) {
-                //e.printStackTrace();
                 forwardPage = "/View/errorPage.jsp";
             }
             // check if client is't exist, add html, form to add new client
@@ -54,7 +53,6 @@ public class LeaveRequestCommand implements Command {
             try {
                 requestDAO.persist(carRequest);
             } catch (ViewException e) {
-                //e.printStackTrace();
                 forwardPage = "/View/errorPage.jsp";
             } catch (DAOException e) {
                 //e.printStackTrace();

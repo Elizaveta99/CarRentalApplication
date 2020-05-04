@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <File name="AllLogsFile" fileName="all.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="CommandsFile" fileName="commands.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="DaoFile" fileName="dao.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="HibernateFile" fileName="hibernate.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="filter" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="dao" level="info" additivity="false">
+            <AppenderRef ref="DaoFile"/>
+        </Logger>
+        <Logger name="commands" level="info" additivity="false">
+            <AppenderRef ref="CommandsFile"/>
+        </Logger>
+        <!-- Log everything in hibernate -->
+        <Logger name="org.hibernate" level="info" additivity="false">
+            <AppenderRef ref="HibernateFile" />
+        </Logger>
+        <!-- Log all SQL statements -->
+        <Logger name="org.hibernate.SQL" level="debug" additivity="false">
+            <AppenderRef ref="HibernateFile" />
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="AllLogsFile"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

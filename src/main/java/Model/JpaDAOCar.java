@@ -20,8 +20,6 @@ import java.util.List;
 public class JpaDAOCar extends JpaDAO implements DAOCar {
     static final Logger logger = LogManager.getLogger("dao");
 
-//    @PersistenceContext(unitName="CarRental")
-//    private EntityManager entityManager;
 
     /**
      * Returns amount of cars of given model

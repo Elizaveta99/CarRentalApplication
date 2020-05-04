@@ -22,11 +22,10 @@ public class CarsCommand implements Command {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response, ServletContext servletContext)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher = servletContext.getRequestDispatcher("/View/cars.jsp"); // ??
+        RequestDispatcher dispatcher = servletContext.getRequestDispatcher("/View/cars.jsp");
 
-        //DAOCar carDAO = (DAOCar) servletContext.getAttribute("carDAO");
-        DAOCar carDAO = (DAOCar) MainServlet.jpaDAOCar; // ??
-        List list = carDAO.getAllCars(); // or List<Car>
+        DAOCar carDAO = (DAOCar) MainServlet.jpaDAOCar;
+        List list = carDAO.getAllCars();
         request.setAttribute("carsList", list);
 
         dispatcher.forward(request, response);

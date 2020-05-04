@@ -6,23 +6,11 @@
              version="2.2">
     <persistence-unit name="CarRental">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-<!--        <jta-data-source>jdbc/CarRental</jta-data-source>-->
-
         <class>Model.Car</class>
         <class>Model.Client</class>
         <class>Model.Request</class>
         <class>Model.UserInfo</class>
         <properties>
-
-            <!--        <property name="hibernate.connection.url" value="jdbc:postgresql://localhost/CarRental"/>-->
-            <!--        <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>-->
-            <!--        <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>-->
-            <!--        <property name="hibernate.connection.username" value="postgres"/>-->
-            <!--        <property name="hibernate.connection.password" value="postgres"/>-->
-            <!--        <property name="hibernate.show_sql" value="true" />-->
-            <!--        <property name="hibernate.format_sql" value="true" />-->
-            <!--        <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>-->
-
             <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-247-125-38.eu-west-1.compute.amazonaws.com:5432/ddatj98ktqn8tt?sslmode=require"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
@@ -30,13 +18,6 @@
             <property name="hibernate.connection.password" value="bf95ce939db4f70990369c1613d93c3a6a3d5cdcfe471bdcfaf28c272dd48225"/>
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.format_sql" value="true" />
-<!--            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>-->
-
-
-            <!--        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/CarRental" />-->
-            <!--        <property name="javax.persistence.jdbc.user" value="postgres" />-->
-            <!--        <property name="javax.persistence.jdbc.password" value="postgres" />-->
-            <!--        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />-->
         </properties>
     </persistence-unit>
 </persistence>
